@@ -32,6 +32,7 @@ def main():
     s = 0.5
     d = 1 / (n_x + ((n_x + 1) * s))
     # Initialise list of roxels
+    random.seed(0)
     roxel_list = []
     for i_x in range(n_x):
         for i_y in range(n_y):
