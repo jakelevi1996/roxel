@@ -40,7 +40,7 @@ def main():
             y = ((i_y + 1) * s * d) + ((i_y + 0.5) * d)
             phase = random.uniform(0, 2 * np.pi)
             if square.is_inside_square(x, y):
-                rotations_per_second = abs_rotations_per_second
+                rotations_per_second = -2*abs_rotations_per_second
             else:
                 rotations_per_second = -abs_rotations_per_second / 3
             roxel = Roxel(x, y, d * 0.5, phase, rotations_per_second)
