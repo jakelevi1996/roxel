@@ -15,7 +15,7 @@ ROOT_DIR            = os.path.abspath(os.path.join(CURRENT_DIR, ".."))
 OUTPUT_DIR          = os.path.join(ROOT_DIR, "outputs", "hollie_gif")
 OUTPUT_FRAME_DIR    = os.path.join(OUTPUT_DIR, "frames")
 
-block_size = 2
+block_size = 3
 
 def add_block_to_set(pixel_set, x_left, y_bottom, width=1, height=1):
     for x in range(x_left*block_size, (x_left + width)*block_size):
@@ -69,14 +69,14 @@ def main():
             if (i_x, i_y) in fast_pixel_set:
                 rotations_per_second = -2
             else:
-                rotations_per_second = -1 / 3
+                rotations_per_second = -1 / 4
             roxel = Roxel(x, y, d * 0.5, phase, rotations_per_second)
             roxel_list.append(roxel)
 
     # Create frames of the gif
     print("Making gif frames...", flush=True)
     fps = 25
-    duration = 3
+    duration = 2
     n_frames = fps * duration
     gif = Gif()
     if not os.path.isdir(OUTPUT_FRAME_DIR):
