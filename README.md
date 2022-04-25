@@ -26,4 +26,8 @@ The images and animations above can be generated with the following command:
 python scripts/make_square_gif.py
 ```
 
+Here is another example (the pattern in this one is more complex, and slightly harder to spot):
+
+![Roxel Hollie gif.gif](https://github.com/jakelevi1996/roxel/blob/main/outputs/protected/hollie_gif/Roxel%20hollie%20gif.gif "Roxel Hollie gif.gif")
+
 *More to follow...*
