@@ -12,7 +12,7 @@ def main(args: cli.Namespace):
     assert isinstance(dt,           float)
     assert isinstance(num_periods,  float)
     assert isinstance(text_str,     str)
-    assert isinstance(output_dir,   str)#
+    assert isinstance(output_dir,   str)
 
     rng = np.random.default_rng(seed)
 
