@@ -32,4 +32,30 @@ Here is another example (the pattern in this one is more complex, and slightly h
 
 ![Roxel Hollie gif.gif](https://github.com/jakelevi1996/roxel/blob/main/outputs/protected/hollie_gif/Roxel%20hollie%20gif.gif "Roxel Hollie gif.gif")
 
-*More to follow...*
+## Flashing messages
+
+```
+python scripts/flashing_msg.py
+```
+
+![](outputs/flash_msg/signals.png)
+
+![](outputs/flash_msg/frame_3.png)
+
+![](outputs/flash_msg/frame_16.png)
+
+![](outputs/flash_msg/shuffle.gif)
+
+![](outputs/flash_msg/ordered.gif)
+
+```
+python scripts/flashing_msg.py --text_str "MERRY\nCHRIS\nTMAS!" --output_dir outputs/flash_msg_xmas
+```
+
+![](outputs/flash_msg_xmas/frame_3.png)
+
+![](outputs/flash_msg_xmas/frame_16.png)
+
+![](outputs/flash_msg_xmas/shuffle.gif)
+
+![](outputs/flash_msg_xmas/ordered.gif)
