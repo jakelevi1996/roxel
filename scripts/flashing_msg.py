@@ -30,9 +30,9 @@ def main(args: cli.Namespace):
             title="Signals",
         ),
         plotting.Subplot(
-            plotting.Line(x[1:], np.abs(np.diff(t)/np.diff(x)), c="b", **kw),
-            plotting.Line(x[1:], np.abs(np.diff(h)/np.diff(x)), c="r", **kw),
-            title="Absolute Derivatives",
+            plotting.Line(x[1:], (np.diff(t)/np.diff(x)), c="b", **kw),
+            plotting.Line(x[1:], (np.diff(h)/np.diff(x)), c="r", **kw),
+            title="Derivatives",
         ),
         plotting.Subplot(
             plotting.Hist(t, np.linspace(0, 1, 15), c="b"),
